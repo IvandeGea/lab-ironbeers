@@ -1,0 +1,39 @@
+<h1> RANDOM BEER</h1>
+
+{{#each responseFromAPI}}
+<section >  
+
+ <article class=Random>  
+
+         <img src="{{image_url}}">
+         <div> 
+
+     <h2> {{name}} </h2>
+            <p> {{description}}</p>
+            <em>{{tagline}} </em> 
+
+         <h3> Food pairing</h3>  
+        <ul>
+                  {{#each food_pairing}}
+                
+               <li> {{food_pairing}} </li>
+        </ul>
+          
+
+               {{/each}} 
+               
+
+     
+
+          <i> Brewers Tips: <i><p> {{brewers_tips}}</p>  
+
+
+         </div>
+       
+
+ </article>
+            
+ </section>
+
+ {{/each}} 
+
